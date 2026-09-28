@@ -1,5 +1,7 @@
 package com.example.pcfactory.products.cpu;
 
+
+
 public class ProfessionalCPU implements CPU {
 
     @Override

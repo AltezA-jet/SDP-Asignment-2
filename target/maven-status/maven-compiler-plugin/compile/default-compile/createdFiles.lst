@@ -1,3 +1,9 @@
+com\example\pcfactory\client\PCClient.class
 com\example\pcfactory\products\cpu\GamingCPU.class
-com\example\pcfactory\products\cpu\ProfessionalCPU.class
+com\example\pcfactory\products\gpu\GPU.class
+com\example\pcfactory\products\gpu\GamingGPU.class
+com\example\pcfactory\products\cpu\BudgetCPU.class
+com\example\pcfactory\products\gpu\ProfessionalGPU.class
 com\example\pcfactory\products\cpu\CPU.class
+com\example\pcfactory\products\gpu\BudgetGPU.class
+com\example\pcfactory\products\cpu\ProfessionalCPU.class
