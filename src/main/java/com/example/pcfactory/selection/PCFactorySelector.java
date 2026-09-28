@@ -4,6 +4,7 @@ import com.example.pcfactory.factories.BudgetPCFactory;
 import com.example.pcfactory.factories.GamingPCFactory;
 import com.example.pcfactory.factories.PCFactory;
 import com.example.pcfactory.factories.ProfessionalPCFactory;
+import com.example.pcfactory.factories.ExtremePCFactory;
 
 public class PCFactorySelector {
 
@@ -13,6 +14,7 @@ public class PCFactorySelector {
             case "budget" -> new BudgetPCFactory();
             case "gaming" -> new GamingPCFactory();
             case "professional" -> new ProfessionalPCFactory();
+            case "extreme" -> new ExtremePCFactory();
             default -> throw new IllegalArgumentException(
                     "Unknown PC family: " + type
             );

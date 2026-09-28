@@ -1,6 +1,7 @@
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\business\PCConfiguration.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\client\PCClient.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\factories\BudgetPCFactory.java
+C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\factories\ExtremePCFactory.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\factories\GamingPCFactory.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\factories\PCFactory.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\factories\ProfessionalPCFactory.java
@@ -15,13 +16,16 @@ C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\Main.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cooling\BudgetCooling.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cooling\Cooling.java
+C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cooling\ExtremeCooling.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cooling\GamingCooling.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cooling\ProfessionalCooling.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cpu\BudgetCPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cpu\CPU.java
+C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cpu\ExtremeCPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cpu\GamingCPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\cpu\ProfessionalCPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\gpu\BudgetGPU.java
+C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\gpu\ExtremeGPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\gpu\GamingGPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\gpu\GPU.java
 C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\gpu\ProfessionalGPU.java

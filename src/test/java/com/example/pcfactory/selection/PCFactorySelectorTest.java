@@ -5,6 +5,7 @@ import com.example.pcfactory.factories.GamingPCFactory;
 import com.example.pcfactory.factories.PCFactory;
 import com.example.pcfactory.factories.ProfessionalPCFactory;
 import org.junit.jupiter.api.Test;
+import com.example.pcfactory.factories.ExtremePCFactory;
 
 import static org.junit.jupiter.api.Assertions.assertInstanceOf;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -38,5 +39,11 @@ public class PCFactorySelectorTest {
                 IllegalArgumentException.class,
                 () -> PCFactorySelector.selectFactory("unknown")
         );
+    }
+    @Test
+    void shouldSelectExtremeFactory() {
+        PCFactory factory = PCFactorySelector.selectFactory("extreme");
+
+        assertInstanceOf(ExtremePCFactory.class, factory);
     }
 }
