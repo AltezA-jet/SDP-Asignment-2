@@ -1,0 +1,137 @@
+@startuml AbstractFactory
+title Abstract Factory - PC Factory
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+interface PCFactory {
+  +createCPU(): CPU
+  +createGPU(): GPU
+  +createCooling(): Cooling
+}
+class BudgetPCFactory
+class GamingPCFactory
+class ProfessionalPCFactory
+class ExtremePCFactory
+PCFactory <|.. BudgetPCFactory
+PCFactory <|.. GamingPCFactory
+PCFactory <|.. ProfessionalPCFactory
+PCFactory <|.. ExtremePCFactory
+
+interface CPU {
+  +getName(): String
+  +getPowerConsumption(): int
+  +getPerformance(): int
+}
+interface GPU {
+  +getName(): String
+  +getPowerConsumption(): int
+  +getPerformance(): int
+}
+interface Cooling {
+  +getName(): String
+  +getPowerConsumption(): int
+  +getCoolingPerformance(): int
+}
+class BudgetCPU
+class GamingCPU
+class ProfessionalCPU
+class ExtremeCPU
+class BudgetGPU
+class GamingGPU
+class ProfessionalGPU
+class ExtremeGPU
+class BudgetCooling
+class GamingCooling
+class ProfessionalCooling
+class ExtremeCooling
+CPU <|.. BudgetCPU
+CPU <|.. GamingCPU
+CPU <|.. ProfessionalCPU
+CPU <|.. ExtremeCPU
+GPU <|.. BudgetGPU
+GPU <|.. GamingGPU
+GPU <|.. ProfessionalGPU
+GPU <|.. ExtremeGPU
+Cooling <|.. BudgetCooling
+Cooling <|.. GamingCooling
+Cooling <|.. ProfessionalCooling
+Cooling <|.. ExtremeCooling
+
+BudgetPCFactory ..> BudgetCPU : creates
+BudgetPCFactory ..> BudgetGPU : creates
+BudgetPCFactory ..> BudgetCooling : creates
+GamingPCFactory ..> GamingCPU : creates
+GamingPCFactory ..> GamingGPU : creates
+GamingPCFactory ..> GamingCooling : creates
+ProfessionalPCFactory ..> ProfessionalCPU : creates
+ProfessionalPCFactory ..> ProfessionalGPU : creates
+ProfessionalPCFactory ..> ProfessionalCooling : creates
+ExtremePCFactory ..> ExtremeCPU : creates
+ExtremePCFactory ..> ExtremeGPU : creates
+ExtremePCFactory ..> ExtremeCooling : creates
+
+class PCConfiguration {
+  -cpu: CPU
+  -gpu: GPU
+  -cooling: Cooling
+  +PCConfiguration(factory: PCFactory)
+  +calculateTotalPower(): int
+  +calculatePerformanceScore(): int
+  +isBalanced(): boolean
+  +printSummary(): void
+}
+class PCClient {
+  +buildPC(factory: PCFactory): void
+}
+class PCFactorySelector {
+  +{static} selectFactory(type: String): PCFactory
+}
+class Main {
+  +{static} main(args: String[]): void
+}
+PCConfiguration --> CPU
+PCConfiguration --> GPU
+PCConfiguration --> Cooling
+PCConfiguration ..> PCFactory : uses
+PCClient ..> PCConfiguration : creates
+PCClient ..> PCFactory
+PCFactorySelector ..> PCFactory : returns
+Main ..> PCFactorySelector
+Main ..> PCClient
+@enduml
+
+@startuml FactoryMethod
+title Factory Method - Computer
+skinparam classAttributeIconSize 0
+
+interface Computer {
+  +build(): void
+}
+class BudgetComputer
+class GamingComputer
+class ProfessionalComputer
+Computer <|.. BudgetComputer
+Computer <|.. GamingComputer
+Computer <|.. ProfessionalComputer
+
+abstract class ComputerCreator {
+  +{abstract} createComputer(): Computer
+  +prepareComputer(): void
+}
+class BudgetComputerCreator {
+  +createComputer(): Computer
+}
+class GamingComputerCreator {
+  +createComputer(): Computer
+}
+class ProfessionalComputerCreator {
+  +createComputer(): Computer
+}
+ComputerCreator <|-- BudgetComputerCreator
+ComputerCreator <|-- GamingComputerCreator
+ComputerCreator <|-- ProfessionalComputerCreator
+ComputerCreator ..> Computer : uses
+BudgetComputerCreator ..> BudgetComputer : creates
+GamingComputerCreator ..> GamingComputer : creates
+ProfessionalComputerCreator ..> ProfessionalComputer : creates
+@enduml
