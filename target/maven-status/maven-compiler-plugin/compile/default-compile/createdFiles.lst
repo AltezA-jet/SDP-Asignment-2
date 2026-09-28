@@ -7,3 +7,4 @@ com\example\pcfactory\products\gpu\ProfessionalGPU.class
 com\example\pcfactory\products\cpu\CPU.class
 com\example\pcfactory\products\gpu\BudgetGPU.class
 com\example\pcfactory\products\cpu\ProfessionalCPU.class
+com\example\pcfactory\Main.class
