@@ -1,29 +1,21 @@
 package com.example.pcfactory.client;
 
-
-import com.example.pcfactory.products.cpu.BudgetCPU;
-import com.example.pcfactory.products.cpu.GamingCPU;
-import com.example.pcfactory.products.gpu.GamingGPU;
-import com.example.pcfactory.products.gpu.BudgetGPU;
-
+import com.example.pcfactory.factories.PCFactory;
+import com.example.pcfactory.products.cpu.CPU;
+import com.example.pcfactory.products.gpu.GPU;
+import com.example.pcfactory.products.cooling.Cooling;
 
 public class PCClient {
 
-    public void buildBudgetPC() {
-        BudgetCPU cpu = new BudgetCPU();
-        BudgetGPU gpu = new BudgetGPU();
+    public void buildPC(PCFactory factory) {
 
-        System.out.println("Building Budget PC");
-        System.out.println(cpu.getName());
-        System.out.println(gpu.getName());
-    }
+        CPU cpu = factory.createCPU();
+        GPU gpu = factory.createGPU();
+        Cooling cooling = factory.createCooling();
 
-    public void buildGamingPC() {
-        GamingCPU cpu = new GamingCPU();
-        GamingGPU gpu = new GamingGPU();
-
-        System.out.println("Building Gaming PC");
-        System.out.println(cpu.getName());
-        System.out.println(gpu.getName());
+        System.out.println("Building PC");
+        System.out.println("CPU: " + cpu.getName());
+        System.out.println("GPU: " + gpu.getName());
+        System.out.println("Cooling: " + cooling.getName());
     }
 }
