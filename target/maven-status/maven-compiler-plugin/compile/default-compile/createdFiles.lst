@@ -8,6 +8,7 @@ com\example\pcfactory\factories\PCFactory.class
 com\example\pcfactory\factories\BudgetPCFactory.class
 com\example\pcfactory\factories\GamingPCFactory.class
 com\example\pcfactory\products\cpu\GamingCPU.class
+com\example\pcfactory\business\PCConfiguration.class
 com\example\pcfactory\products\cpu\ProfessionalCPU.class
 com\example\pcfactory\client\PCClient.class
 com\example\pcfactory\products\cpu\BudgetCPU.class
