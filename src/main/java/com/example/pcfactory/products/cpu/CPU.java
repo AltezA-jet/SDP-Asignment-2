@@ -8,4 +8,6 @@ public interface CPU {
     int getPowerConsumption();
 
     int getPerformance();
+    
+    String getSocket();
 }

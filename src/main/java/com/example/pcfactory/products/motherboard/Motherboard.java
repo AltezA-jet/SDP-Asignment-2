@@ -1,0 +1,1 @@
+C:\Users\altez\Documents\proging\java\SDP-Asignment-2\src\main\java\com\example\pcfactory\products\motherboard

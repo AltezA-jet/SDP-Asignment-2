@@ -17,4 +17,9 @@ public class BudgetCPU implements CPU {
     public int getPerformance() {
         return 50;
     }
+
+    @Override
+    public String getSocket() {
+        return "AM4";
+    }
 }

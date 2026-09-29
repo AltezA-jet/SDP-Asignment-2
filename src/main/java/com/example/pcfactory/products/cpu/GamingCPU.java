@@ -17,4 +17,9 @@ public class GamingCPU implements CPU {
     public int getPerformance() {
         return 90;
     }
+    
+    @Override
+    public String getSocket() {
+        return "AM5";
+    }
 }

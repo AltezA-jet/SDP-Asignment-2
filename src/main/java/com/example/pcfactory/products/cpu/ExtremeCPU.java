@@ -16,4 +16,9 @@ public class ExtremeCPU implements CPU {
     public int getPerformance() {
         return 100;
     }
+    
+    @Override
+    public String getSocket() {
+        return "AM5";
+    }
 }
