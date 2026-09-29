@@ -16,4 +16,10 @@ public class ProfessionalGPU implements GPU {
     public int getPerformance() {
         return 100;
     }
+
+    @Override
+    public int getLengthMm() {
+        return 380;
+    }
+
 }

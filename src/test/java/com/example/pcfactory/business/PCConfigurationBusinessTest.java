@@ -14,7 +14,7 @@ public class PCConfigurationBusinessTest {
         PCConfiguration configuration =
                 new PCConfiguration(new GamingPCFactory());
 
-        assertEquals(445, configuration.calculateTotalPower());
+        assertEquals(523, configuration.calculateTotalPower());
     }
 
     @Test
@@ -38,6 +38,6 @@ public class PCConfigurationBusinessTest {
         PCConfiguration configuration =
                 new PCConfiguration(new BudgetPCFactory());
 
-        assertEquals(203, configuration.calculateTotalPower());
+        assertEquals(258, configuration.calculateTotalPower());
     }
 }

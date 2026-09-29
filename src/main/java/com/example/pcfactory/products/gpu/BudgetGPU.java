@@ -16,4 +16,9 @@ public class BudgetGPU implements GPU {
     public int getPerformance() {
         return 50;
     }
+
+    @Override
+    public int getLengthMm() {
+        return 220;
+    }
 }

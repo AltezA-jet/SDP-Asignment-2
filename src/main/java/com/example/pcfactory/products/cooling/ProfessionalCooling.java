@@ -16,4 +16,9 @@ public class ProfessionalCooling implements Cooling {
     public int getCoolingPerformance() {
         return 100;
     }
+
+    @Override
+    public int getMaxCpuPerformance() {
+        return 110;
+    }
 }

@@ -16,4 +16,9 @@ public class GamingCooling implements Cooling {
     public int getCoolingPerformance() {
         return 90;
     }
+
+    @Override
+    public int getMaxCpuPerformance() {
+        return 100;
+    }
 }

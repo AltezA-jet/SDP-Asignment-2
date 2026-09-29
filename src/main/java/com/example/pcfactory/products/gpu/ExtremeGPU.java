@@ -16,4 +16,8 @@ public class ExtremeGPU implements GPU {
     public int getPerformance() {
         return 100;
     }
+    @Override
+    public int getLengthMm() {
+        return 430;
+    }
 }

@@ -16,4 +16,9 @@ public class BudgetCooling implements Cooling {
     public int getCoolingPerformance() {
         return 50;
     }
+
+    @Override
+    public int getMaxCpuPerformance() {
+        return 60;
+    }
 }

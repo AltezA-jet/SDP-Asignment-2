@@ -4,4 +4,5 @@ public interface Cooling {
     String getName();
     int getPowerConsumption();
     int getCoolingPerformance();
+    int getMaxCpuPerformance();
 }

@@ -16,4 +16,10 @@ public class GamingGPU implements GPU {
     public int getPerformance() {
         return 90;
     }
+
+    @Override
+    public int getLengthMm() {
+        return 320;
+    }
+
 }

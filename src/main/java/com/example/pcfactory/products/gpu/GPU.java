@@ -7,4 +7,6 @@ public interface GPU {
     int getPowerConsumption();
 
     int getPerformance();
+
+    int getLengthMm();
 }
