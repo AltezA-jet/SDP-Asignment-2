@@ -6,6 +6,8 @@ import com.example.pcfactory.products.gpu.GPU;
 import com.example.pcfactory.products.gpu.ExtremeGPU;
 import com.example.pcfactory.products.cooling.Cooling;
 import com.example.pcfactory.products.cooling.ExtremeCooling;
+import com.example.pcfactory.products.ram.ExtremeRAM;
+import com.example.pcfactory.products.ram.RAM;
 
 public class ExtremePCFactory implements PCFactory {
 
@@ -22,5 +24,10 @@ public class ExtremePCFactory implements PCFactory {
     @Override
     public Cooling createCooling() {
         return new ExtremeCooling();
+    }
+
+    @Override
+    public RAM createRAM() {
+        return new ExtremeRAM();
     }
 }

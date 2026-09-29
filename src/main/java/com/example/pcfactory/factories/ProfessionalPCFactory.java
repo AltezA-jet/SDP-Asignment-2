@@ -6,6 +6,8 @@ import com.example.pcfactory.products.gpu.ProfessionalGPU;
 import com.example.pcfactory.products.gpu.GPU;
 import com.example.pcfactory.products.cooling.ProfessionalCooling;
 import com.example.pcfactory.products.cooling.Cooling;
+import com.example.pcfactory.products.ram.ProfessionalRAM;
+import com.example.pcfactory.products.ram.RAM;
 
 public class ProfessionalPCFactory implements PCFactory {
 
@@ -22,5 +24,10 @@ public class ProfessionalPCFactory implements PCFactory {
     @Override
     public Cooling createCooling() {
         return new ProfessionalCooling();
+    }
+
+    @Override
+    public RAM createRAM() {
+        return new ProfessionalRAM();
     }
 }

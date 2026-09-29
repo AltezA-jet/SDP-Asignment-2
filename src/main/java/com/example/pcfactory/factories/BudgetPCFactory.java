@@ -6,6 +6,8 @@ import com.example.pcfactory.products.gpu.BudgetGPU;
 import com.example.pcfactory.products.gpu.GPU;
 import com.example.pcfactory.products.cooling.BudgetCooling;
 import com.example.pcfactory.products.cooling.Cooling;
+import com.example.pcfactory.products.ram.BudgetRAM;
+import com.example.pcfactory.products.ram.RAM;
 
 public class BudgetPCFactory implements PCFactory {
 
@@ -23,4 +25,10 @@ public class BudgetPCFactory implements PCFactory {
     public Cooling createCooling() {
         return new BudgetCooling();
     }
+
+    @Override 
+    public RAM createRAM(){
+        return new BudgetRAM();
+    }
+
 }
